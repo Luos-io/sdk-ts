@@ -31,7 +31,7 @@ export const close = async (
   debug: boolean = false,
 ): Promise<boolean> => {
   if (debug) {
-    logger.debug(`Closing port : '${port.path}'' ...`);
+    logger.debug(`Closing port : '${port.path}' ...`);
   }
 
   return new Promise((resolve) => {
