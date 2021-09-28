@@ -8,9 +8,9 @@ export interface ISerialActionHandler<T> {
 export interface ISerialActionWriteHandler
   extends ISerialActionHandler<boolean> {}
 
+export const isPortInfoArray = (object: any): object is PortInfo =>
+  Array.isArray(object) && object.every((o) => 'path' in o);
 export interface IList<T> {
   (moduleType: ModuleType, debug: boolean): Promise<T>;
 }
-
-export const isPortInfoArray = (object: any): object is PortInfo =>
-  Array.isArray(object) && object.every((o) => 'path' in o);
+export default IList;

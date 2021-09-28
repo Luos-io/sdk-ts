@@ -2,6 +2,12 @@ import { logger } from '@luos-io/utils';
 
 logger.setTags(['SDK']);
 
-export * from './utils';
+// SDK
+export * from './inspect';
 export * from './list';
+
+// Utilities
+export * from './utils';
+
+// Types
 export * from 'interfaces/common';
