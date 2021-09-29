@@ -1,8 +1,11 @@
-import type { IInspect } from './interfaces';
+import { InspectOptions } from 'inspect/interfaces';
 
-export const browserInspect: IInspect = async (path, options) => {
+export const browserInspect = async (
+  port: SerialPort,
+  options: InspectOptions,
+) => {
   // TMP
-  path;
+  port;
   options;
   // END TMP
 

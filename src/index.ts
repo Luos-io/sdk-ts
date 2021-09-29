@@ -6,8 +6,5 @@ logger.setTags(['SDK']);
 export * from './inspect';
 export * from './list';
 
-// Utilities
-export * from './utils';
-
 // Types
 export * from 'interfaces/common';

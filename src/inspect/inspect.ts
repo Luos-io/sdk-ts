@@ -1,7 +1,12 @@
-import { IInspect } from 'inspect';
+import { InspectOptions } from './interfaces';
 
-export const Inspect: IInspect = async (path, options) =>
+export const Inspect = async (
+  path: string | SerialPort,
+  options: InspectOptions,
+) =>
   typeof window !== 'undefined'
-    ? await (await import('./_browser')).browserInspect(path, options)
-    : await (await import('./_host')).hostInspect(path, options);
+    ? await (
+        await import('./_browser')
+      ).browserInspect(path as SerialPort, options)
+    : await (await import('./_host')).hostInspect(path as string, options);
 export default Inspect;
