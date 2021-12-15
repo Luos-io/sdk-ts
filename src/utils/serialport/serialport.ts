@@ -13,7 +13,7 @@ export const read = async (port: any, debug: boolean) =>
     ? await (await import('./_browser')).read(port, debug)
     : await (await import('./_host')).read(port, debug);
 
-export const write = async (port: any, data: string, debug: boolean) =>
+export const write = async (port: any, data: string | Buffer, debug: boolean) =>
   typeof window !== 'undefined'
     ? await (await import('./_browser')).write(port, data, debug)
     : await (await import('./_host')).write(port, data, debug);

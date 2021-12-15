@@ -13,11 +13,13 @@ export const open = async (
 
   return new Promise((resolve) => {
     port.open((err) => {
-      if (err && debug) {
-        logger.debug(
-          `Can't open the serial port : '${port.path}'`,
-          err.message,
-        );
+      if (err) {
+        if (debug) {
+          logger.debug(
+            `Can't open the serial port : '${port.path}'`,
+            err.message,
+          );
+        }
         return resolve(false);
       }
 
@@ -50,7 +52,7 @@ export const close = async (
 
 export const write = async (
   serialPort: SerialPort,
-  data: string,
+  data: string | Buffer,
   debug: boolean = false,
 ): Promise<boolean> =>
   new Promise((res) => {

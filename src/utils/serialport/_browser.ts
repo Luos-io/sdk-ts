@@ -42,7 +42,7 @@ export const close = async (
 
 export const write = async (
   port: SerialPort,
-  data: string,
+  data: string | Buffer,
   debug: boolean = false,
 ): Promise<boolean> => {
   if (port.writable) {
@@ -54,7 +54,7 @@ export const write = async (
 
     try {
       await writer.ready;
-      await writer.write(data);
+      await writer.write(data.toString());
 
       if (debug) {
         logger.debug(
@@ -99,11 +99,8 @@ export const read = async (
         if (debug && value) {
           logger.debug('Chunk decoded', value);
         }
-        if (message) {
-          reader.releaseLock();
-          const json = JSON.parse(message);
-          return json;
-        }
+        reader.releaseLock();
+        return message;
       }
       if (debug) {
         logger.log('Message received', message);
