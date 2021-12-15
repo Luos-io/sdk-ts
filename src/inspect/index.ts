@@ -1,4 +1,8 @@
-export * from './inspect';
-export { default } from './inspect';
+import { RTB } from './rtb/index.js';
 
-export * from './interfaces';
+export * from './rtb/index.js';
+
+export const inspect = {
+  RTB,
+};
+export default inspect;
