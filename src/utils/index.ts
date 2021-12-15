@@ -1,4 +1,5 @@
 export * as serialPortUtils from 'utils/serialport';
+export * as loggerUtils from 'utils/logger';
 
 interface CustomSerialOptions extends SerialOptions {
   dataBits: 8 | 7 | 6 | 5 | undefined;

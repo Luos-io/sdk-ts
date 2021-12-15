@@ -1,4 +1,4 @@
-import { logger } from '@luos-io/utils';
+import { logger } from 'utils/logger';
 
 logger.setTags(['SDK']);
 
