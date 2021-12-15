@@ -1,4 +1,4 @@
-import { logger } from '@luos-io/utils';
+import { logger } from 'utils/logger';
 import { serialPortUtils } from 'utils/index';
 import { ModuleType, moduleTypeEnum } from 'interfaces/common';
 import type { IList } from './interfaces';

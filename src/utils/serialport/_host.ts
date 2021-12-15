@@ -1,5 +1,5 @@
 import SerialPort from 'serialport';
-import { logger } from '@luos-io/utils';
+import { logger } from 'utils/logger';
 
 import { cancellablePromiseWithTimeout, ICancellablePromise } from '../index';
 

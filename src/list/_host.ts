@@ -1,5 +1,5 @@
 import SerialPort, { PortInfo } from 'serialport';
-import { logger } from '@luos-io/utils';
+import { logger } from 'utils/logger';
 import { defaultSerialOptions, serialPortUtils } from 'utils/index';
 import { ModuleType, moduleTypeEnum } from 'interfaces/common';
 

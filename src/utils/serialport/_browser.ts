@@ -1,4 +1,4 @@
-import { logger } from '@luos-io/utils';
+import { logger } from 'utils/logger';
 import { defaultSerialOptions } from 'utils/index';
 
 export const open = async (
