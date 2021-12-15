@@ -17,7 +17,8 @@ const checkPortCompatibility = async (
         debug,
       );
       if (hasWriteSucceed) {
-        const json = await serialPortUtils.read(port, debug);
+        const message = await serialPortUtils.read(port, debug);
+        const json = JSON.parse(message);
         const response = moduleTypeEnum.find(
           (moduleType) => json[moduleType.toLowerCase()] !== undefined,
         ) as ModuleType;

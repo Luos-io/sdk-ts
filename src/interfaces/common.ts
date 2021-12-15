@@ -1,7 +1,3 @@
-export interface ICancellablePromise<T> extends Promise<T> {
-  cancel: (err: Error) => void;
-}
-
 /**
  * ModuleType
  * @description Type of module
@@ -9,6 +5,7 @@ export interface ICancellablePromise<T> extends Promise<T> {
  * @enum {string}
  */
 export enum ModuleType {
+  ALL = 'ALL',
   GATE = 'GATE',
   SNIFFER = 'SNIFFER',
 }
