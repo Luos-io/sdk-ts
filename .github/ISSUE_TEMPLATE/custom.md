@@ -1,6 +1,6 @@
 ---
 name: Custom issue template
-about: Report issue or make suggestions for Luos Utils
+about: Report issue or make suggestions for Luos SDK-TS
 title: '[SDK-TS]'
 labels: sdk-ts
 assignees: k0rdan

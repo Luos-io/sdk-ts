@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build
-    uses: luos-io/utils/.github/workflows/build.yml@main
+    uses: luos-io/sdk-ts/.github/workflows/build.yml@main
   publish:
     name: Publish
     runs-on: ubuntu-latest

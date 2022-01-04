@@ -6,4 +6,4 @@ labels: ''
 assignees: nicolas-rabault
 ---
 
-**What feature would you like to be included in Luos Utils?**
+**What feature would you like to be included in Luos SDK-TS?**

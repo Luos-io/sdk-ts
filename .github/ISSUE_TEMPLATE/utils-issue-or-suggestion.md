@@ -1,8 +1,8 @@
 ---
 name: Utils issue or suggestion
-about: Report issue or make suggestions for Luos Utils
-title: '[Utils]'
-labels: Utils
+about: Report issue or make suggestions for Luos SDK-TS
+title: '[SDK-TS]'
+labels: sdk-ts
 assignees: k0rdan
 ---
 
