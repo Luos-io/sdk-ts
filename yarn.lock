@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@luos-io/utils@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@luos-io/utils/-/utils-0.0.1.tgz#e2eda0aad5749f3fb15d0e7812c07e517dde993b"
-  integrity sha512-r6kZuYJLJE/+yWQCmBR6oIwvScsT5S2z1jQ5ngsXVuZAgs5eb8AESoPtE+lR5sERjtX/H73S2QF+WaZtC5xfSQ==
+"@luos-io/utils@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@luos-io/utils/-/utils-0.0.2.tgz#1cef75141b5832612c4a794425696a682c7400c0"
+  integrity sha512-PcWKqFp/K7UTIPQ672+k9L1FEUmaQVc/bSArf8ek52ocWot1MRt7LaEdXrr/pdvKPqMu1DIzEj6xpBV5aKWpqg==
   dependencies:
     chalk "^4.1.2"
 
