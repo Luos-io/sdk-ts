@@ -27,7 +27,7 @@ jobs:
       - name: Publish GitHub Packages
         run: yarn publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup NodeJS
         uses: actions/setup-node@v2
@@ -39,4 +39,4 @@ jobs:
       - name: Publish NPM
         run: yarn publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
