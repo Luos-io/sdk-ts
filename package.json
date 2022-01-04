@@ -6,9 +6,23 @@
   "main": "./lib/index.umd.js",
   "types": "./lib/index.d.ts",
   "module": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luos-io/utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Luos-io/utils/issues"
+  },
+  "homepage": "https://github.com/Luos-io/utils#readme",
   "scripts": {
-    "dev": "./node_modules/.bin/tsc -w & ./node_modules/.bin/tsc-alias -w & ./node_modules/.bin/rollup -c rollup.config.js -w",
-    "build": "yarn clean && ./node_modules/.bin/tsc && ./node_modules/.bin/tsc-alias && ./node_modules/.bin/rollup -c rollup.config.js && chmod +x ./lib/index.js",
+    "dev": "tsc -w & tsc-alias -w & rollup -c rollup.config.js -w",
+    "build": "yarn clean && tsc && tsc-alias && rollup -c rollup.config.js && chmod +x ./lib/index.js",
     "clean": "rm -rf ./lib"
   },
   "devDependencies": {
@@ -30,6 +44,5 @@
   },
   "peerDependencies": {
     "serialport": "9.2.8"
-  },
-  "description": ""
+  }
 }
