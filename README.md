@@ -23,3 +23,22 @@ The command is underlaying multiple actions :
 - Executing the `rollup` packager in watch mode to create :
   - UMD bundle for browser usage on the frontend : `index.umd.js`
   - ESModule bundle for the backend usage like our CLI : `index.esm.js`
+
+## Contribute
+
+### Workflow
+
+You can use [ACT](https://github.com/nektos/act#installation-through-package-managers) to validate the workflows locally :
+
+1. Install ACT (See link for other systems):
+
+```sh
+brew install act
+```
+
+2. Setup secrets variables in the `.act/.secrets` file :
+
+```yml
+NPM_TOKEN=
+GITHUB_TOKEN=
+```
