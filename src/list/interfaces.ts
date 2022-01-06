@@ -1,13 +1,6 @@
 import { PortInfo } from 'serialport';
 import { ModuleType } from 'interfaces/common';
 
-export interface ISerialActionHandler<T> {
-  (port: SerialPort, debug: boolean): Promise<T>;
-}
-
-export interface ISerialActionWriteHandler
-  extends ISerialActionHandler<boolean> {}
-
 export const isPortInfoArray = (object: any): object is PortInfo =>
   Array.isArray(object) && object.every((o) => 'path' in o);
 export interface IList<T> {

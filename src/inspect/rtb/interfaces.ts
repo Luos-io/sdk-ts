@@ -36,6 +36,6 @@ export interface RTBData {
 }
 
 export interface IRTB {
-  (path: string | SerialPort, options: RTBOptions): Promise<RTBData>;
+  (path: string, options: RTBOptions): Promise<RTBData>;
 }
 export default IRTB;

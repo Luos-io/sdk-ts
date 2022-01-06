@@ -1,7 +1,9 @@
+import { OpenOptions } from 'serialport';
+
 export * as serialPortUtils from 'utils/serialport';
 export * as loggerUtils from 'utils/logger';
 
-interface CustomSerialOptions extends SerialOptions {
+interface CustomSerialOptions extends OpenOptions {
   dataBits: 8 | 7 | 6 | 5 | undefined;
   stopBits: 1 | 2 | undefined;
 }

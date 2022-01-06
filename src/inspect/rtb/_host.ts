@@ -74,7 +74,7 @@ const parseService = (rtb: Buffer): RTBService => {
 export const hostRTB: IRTB = async (path, options) => {
   const { debug } = options;
 
-  const port = new SerialPort(path as string, {
+  const port = new SerialPort(path, {
     ...defaultSerialOptions,
     autoOpen: false,
   });
