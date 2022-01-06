@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/Luos-io/utils#readme",
   "scripts": {
-    "prepublish": "tsc",
     "dev": "tsc -w & tsc-alias -w",
     "build": "yarn clean && tsc && tsc-alias && chmod +x ./lib/index.js",
     "clean": "rm -rf ./lib"
