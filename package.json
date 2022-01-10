@@ -34,7 +34,7 @@
   "dependencies": {
     "@luos-io/utils": "^0.0.2",
     "serialport": "^9.2.8",
-    "web-serial-polyfill": "^1.0.12"
+    "web-serial-polyfill": "^1.0.13"
   },
   "peerDependencies": {
     "serialport": "9.2.8"
