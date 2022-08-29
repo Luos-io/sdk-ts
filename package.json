@@ -23,7 +23,7 @@
     "clean": "rm -rf ./lib"
   },
   "devDependencies": {
-    "@types/node": "^16.11.18",
+    "@types/node": "^18.7.13",
     "@types/serialport": "^8.0.2",
     "@types/w3c-web-serial": "^1.0.2",
     "@types/w3c-web-usb": "^1.0.5",
