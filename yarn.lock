@@ -923,10 +923,10 @@ util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
-web-serial-polyfill@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/web-serial-polyfill/-/web-serial-polyfill-1.0.12.tgz#f64d28ab887fac988edb80461a09c3c6972a04c9"
-  integrity sha512-REcPAAAdCB8UxEybM9B5S3ZcIkVMw8yCqt2UINQjfwYyt+vfQw/nFljYgawQmsdaG7ucgggmCzyx6HqnKeohrQ==
+web-serial-polyfill@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/web-serial-polyfill/-/web-serial-polyfill-1.0.14.tgz#fd58e1bc42469dd8a62f7ef37250e21f94ca8d07"
+  integrity sha512-DCgs3SNtmB/liKcNyFnp/kdwShOITwmv+UXQOLffQkNKQMHohK1b9pIz70Eo9Bf+0bKM41hf4uQaN3WH7snKTQ==
 
 which@^1.2.14:
   version "1.3.1"
